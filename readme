@@ -2,3 +2,7 @@
 // takes a twitter handle
 // returns the id for that
 // http://api.twitter.com/users/bumi.json id_str
+to test:
+
+	npm install
+	./run
