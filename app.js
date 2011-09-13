@@ -5,8 +5,9 @@ h.createServer(function(request, response) {
 		path : '/users' + request.url
 	}, function(apiResponse) {
 		apiResponse.on('data', function(chunk) {
-			response.write(chunk.toString('utf8').match(/.+d>(.+?)</)[1] + '\n');
-			response.end();
+			if (/d>(.+?)</.exec(chunk)) {
+				response.end(RegExp.$1 + '\n');
+			}
 		});
 	});
 }).listen(8080);
