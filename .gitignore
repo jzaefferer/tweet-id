@@ -1,0 +1,5 @@
+.monitor
+.project
+node_modules
+npm-debug.log
+app-min.js
