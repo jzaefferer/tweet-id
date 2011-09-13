@@ -1,0 +1,12 @@
+{ "name": "tweet-id"
+, "version": "0.0.1"
+, "description": "Twitter handle-to-id lookup service, in not that many characters."
+, "author": "Jörn Zaefferer"
+, "repository": { "type": "git"
+                , "url": "git@github.com:jzaefferer/tweet-id.git"
+                }
+, "dependencies": { "uglify-js": "=1.0.7"
+                  }
+, "main": "./run"
+, "engines": { "node": "~>0.4.0"}
+}

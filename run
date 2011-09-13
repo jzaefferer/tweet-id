@@ -1,0 +1,3 @@
+#/bin/bash
+uglifyjs app.js > app-min.js
+node app-min.js
